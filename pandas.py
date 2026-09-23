@@ -256,4 +256,3 @@ students["Performance"]=(students["Marks"] >= 90).map({True: "Excellent", False:
 students
 
 students.groupby("Department")["Name"].count()
-# - [ ] Complete the mini project
