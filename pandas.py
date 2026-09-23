@@ -237,42 +237,23 @@ students
 students.head(5)
 print(students["Name"])
 print(students["Marks"])
-3#
+
 print(students[students["Marks"]>80])
-4#
+
 print(students[students["Attendance"]>85])
-5#
+
 students[(students["Marks"]>80) & (students["Attendance"]>85)]
-6#
+
 students["Marks"].mean()
-7#
+
 students["highest-scoring"]=students["Marks"].max()
 students[students["Marks"]==students["highest-scoring"]]
-8#
+
 students.groupby("Department")["Marks"].mean()
-9#
+
 
 students["Performance"]=(students["Marks"] >= 90).map({True: "Excellent", False: "Good"})
 students
-10#
+
 students.groupby("Department")["Name"].count()
-
-
-
-
-# # ✅ Final Checklist
-#
-# Before finishing the lab, make sure you can write these without looking at the examples:
-#
-# - [ ] Create a Series
-# - [ ] Create a DataFrame
-# - [ ] Use `head()` and `tail()`
-# - [ ] Use `shape`, `columns`, and `dtypes`
-# - [ ] Select one or multiple columns
-# - [ ] Filter rows
-# - [ ] Use `&` and `|`
-# - [ ] Add/update columns
-# - [ ] Handle missing values
-# - [ ] Calculate statistics
-# - [ ] Use `groupby()`
 # - [ ] Complete the mini project
